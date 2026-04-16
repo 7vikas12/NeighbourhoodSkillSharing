@@ -1,0 +1,152 @@
+/* GLOBAL */
+body {
+  background: #f5f7fb;
+  font-family: "Inter", sans-serif;
+}
+
+/* ================= ADD SKILL ================= */
+.addSkillContainer {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.addSkillContainer h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1e293b;
+}
+
+.skillForm {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.skillForm input,
+.skillForm textarea,
+.skillForm select {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  font-size: 14px;
+  outline: none;
+}
+
+.skillForm textarea {
+  resize: none;
+  height: 80px;
+}
+
+.skillForm input:focus,
+.skillForm textarea:focus,
+.skillForm select:focus {
+  border-color: #2563eb;
+}
+
+.skillForm button {
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.skillForm button:hover {
+  background: #1d4ed8;
+}
+
+/* ================= EXPLORE ================= */
+.exploreContainer {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.exploreContainer h2 {
+  margin-bottom: 20px;
+  color: #1e293b;
+}
+
+/* GRID */
+.exploreContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.exploreContainer > .skillCard {
+  margin-bottom: 15px;
+}
+
+/* ================= CARD ================= */
+.skillCard {
+  background: #fff;
+  border-radius: 12px;
+  padding: 18px;
+  border: 1px solid #e2e8f0;
+  transition: 0.2s;
+}
+
+.skillCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+}
+
+/* USER INFO */
+.skillCard h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #2563eb;
+}
+
+.skillCard p {
+  font-size: 13px;
+  color: #64748b;
+  margin: 3px 0;
+}
+
+/* TITLE */
+.skillCard h4 {
+  margin: 10px 0 5px;
+  font-size: 17px;
+  color: #1e293b;
+}
+
+/* META */
+.skillCard p:nth-child(n+5) {
+  font-size: 12px;
+}
+
+/* BUTTON */
+.skillCard button {
+  margin-top: 10px;
+  padding: 8px 14px;
+  border: none;
+  background: #2563eb;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.skillCard button:hover {
+  background: #1d4ed8;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .addSkillContainer {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .exploreContainer {
+    padding: 10px;
+  }
+}
